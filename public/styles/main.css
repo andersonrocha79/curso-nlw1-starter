@@ -1,0 +1,47 @@
+
+/* variáveis */
+:root
+{
+    --title-color: #322153;
+    --primary-color: #34cb79;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;             /* faz com que o padding não interfira no tamanho da caixa */
+}
+
+html
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+body
+{
+    background: #f0f0f5;
+    -webkit-font-smoothing: antialiased;
+}
+
+a
+{
+    text-decoration: none;    
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    color: var(--title-color);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+
+/* 
+box model 
+modelo de caixa
+
+largura, altura, alinhamentos, posicionamento, espaçamento, preenchimento, bordas, cor, fundo, maneira que é vista pelo html (display)
+
+*/

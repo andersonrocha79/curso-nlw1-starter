@@ -1,0 +1,191 @@
+
+#page-create-point
+{
+    width: 90%;
+    max-width: 1100px;                  /* a caixa aumenta automaticamente até 1100px */
+    margin: 0 auto;                     /* margem superior e inferior 0, mas direita e esquerda é automática */
+
+}
+
+#page-create-point header
+{
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;     /* coloca um elemento de um lado e o outro elemento do outro lado da tela */
+    align-items: center;                /* centraliza os elementos da caixa header */
+}
+
+#page-create-point header a
+{
+    color: var(--title-color);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+#page-create-point header a span
+{
+    margin-right: 16px;
+    background-image: url('../assets/arrow-left.svg');
+    width: 20px;
+    height: 24px;
+    display: flex;
+}
+
+form
+{
+    background-color: white;
+    padding: 64px;                      /* preenchimento interno da borda da caixa */
+    border-radius: 8px;                 /* arredondamento das bordas da caixa */
+    max-width: 730px;                   /* largura máxima */    
+    margin: 80px auto;
+
+}
+
+form h1
+{
+    font-size: 36px;
+
+    
+}
+
+form fieldset
+{
+    margin-top: 64px;
+    border: 0;
+        
+}
+
+form legend
+{
+    margin-bottom: 40px;       
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+form legend h2
+{
+    font-size: 24px;       
+}
+
+form legend span
+{
+    font-size: 14px;
+    color: var(--title-color);
+}
+
+form .field
+{
+    flex: 1;                        
+    display: flex;
+    flex-direction: column;         /* uma única coluna, um elemento abaixo do outro, ocupando toda a coluna */
+    margin-bottom: 24px;
+}
+
+form .field-group
+{
+    display: flex;
+}
+
+form input, 
+form select
+{
+    background-color: #f0f0f5;
+    border: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+    outline: none;                   /* remove o a linha preta abaixo do campo selecionado */
+    border-radius: 8px; 
+}
+
+form select
+{
+    /*reseta a aparencia padrão do select no chorme*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+form label
+{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/* pega o segundo elemento que tem 2 fields juntos */
+form .field-group .field + .field
+{
+    margin-left: 24px;
+}
+
+form button
+{
+    width: 260px;
+    height: 56px;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    border: 0;
+    font-size: 16px;
+    margin-top: 40px;
+    transition: background-color 400ms;
+}
+
+form button:hover
+{
+    background-color: #2fb86e;
+}
+
+.items-grid
+{
+    display: grid;                          /* organizar a lista em forma de grid */
+    grid-template-columns: 1fr 1fr 1fr;     /* define 3 colunas, cada uma com uma fração do todo 3 */
+    gap: 16px;                              /* coloca um espaço separando os elementos */
+
+
+}
+
+.items-grid li
+{
+    background-color: #f5f5f5;
+    list-style: none;
+    border: 2px solid #f5f5f5;
+    border-radius: 8px;
+    height: 180px;
+    padding: 32px 24px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.items-grid li span
+{
+    margin-top: 12px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    color: var(--title-color);
+
+}
+
+/* busca o li que tenha a classe 'selected'*/
+.items-grid li.selected
+{
+    background-color: #e1faec;
+    border: 2px solid #34cb79;   
+}
+
+
+/* configura para que não tenha eventos de click nestes componentes */
+.items-grid li img,
+.items-grid li span
+{
+    pointer-events: none;
+}

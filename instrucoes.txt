@@ -1,0 +1,34 @@
+- instalar o vscode
+  extensões: 
+  Live Server
+  Nunjucks Template
+  vsCode-icons
+
+- opções do visual studio
+  Control + Shift + P
+
+- instalar o node.js
+
+- instalar o gitbash e definir como 'terminal' o bash
+
+- transformar a pasta do projeto em um projeto node
+  npm init -y
+  
+- instalar o 'express' para criar o servidor
+  npm install express  
+
+- ao baixar o projeto do git, é preciso executar o comando para baixar as dependências novamente
+  npm install
+
+- criar o script "start" no package.json
+  para executar o projeto:
+  npm start  
+
+- instalar o nodemon para publicação automática dos arquivos alterados no servidor
+  npm install nodemon  -D 
+
+- instalar o nunjuks para ser o template engine que modifica as páginas antes de serem enviadas
+  npm install nunjucks  
+
+- instalar o sqlite
+  npm install sqlite3  
